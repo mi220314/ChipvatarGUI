@@ -15,61 +15,13 @@ import Stack from "@mui/material/Stack";
 // import Grid from "@mui/material/Unstable_Grid2";
 
 
-const card = (
-  <React.Fragment>
-    <CardContent>
-      <Grid container spacing={1} columns={12}>
-        <Grid item xs={10}>
-          <Typography variant="h5">Edit Parameters</Typography>
-        </Grid>
-        <Grid item xs={2}>
-          {/* <Box sx={{ border: "1px solid #f1f1ff", borderRadius: "4px" }}> */}
-          <EditOutlinedIcon color="primary"></EditOutlinedIcon>
-          {/* </Box> */}
-        </Grid>
-        <Grid item xs={2}>
-          <Typography variant="body2" color="text.secondary">
-            Runtime
-          </Typography>
-        </Grid>
-        <Grid item xs={4}>
-          <TextField size="small"></TextField>
-        </Grid>
-        <Grid item xs={2}>
-          <Typography variant="body2" color="text.secondary">
-            Parameter 3
-          </Typography>
-        </Grid>
-        <Grid item xs={4}>
-          <TextField size="small"></TextField>
-        </Grid>
-        <Grid item xs={2}>
-          <Typography variant="body2" color="text.secondary">
-            Size
-          </Typography>
-        </Grid>
-        <Grid item xs={4}>
-          <TextField size="small"></TextField>
-        </Grid>
-        <Grid item xs={2}>
-          <Typography variant="body2" color="text.secondary">
-            Parameter 4
-          </Typography>
-        </Grid>
-        <Grid item xs={4}>
-          <TextField size="small"></TextField>
-        </Grid>
-      </Grid>
-    </CardContent>
-  </React.Fragment>
-);
 
 const card2 = (
   <React.Fragment>
     <CardContent>
       <StackedBarCharts></StackedBarCharts>
-      <br />
-      <br />
+      <br/>
+      <br/>
       <HorizontalBarCharts></HorizontalBarCharts>
     </CardContent>
   </React.Fragment>
@@ -89,13 +41,13 @@ export default function ResultAnalysis() {
       <Grid item xs={2}>
         <NavBar></NavBar>
       </Grid>
-      <Grid item xs={7}>
+      <Grid item xs={6}>
         <Stack direction={"column"}>
-          <Card variant="outlined">{card}</Card>
+          {/* <Card variant="outlined">{card}</Card> */}
           <Card variant="outlined">{card2}</Card>
         </Stack>
       </Grid>
-      <Grid item xs={7}>
+      <Grid item xs={8}>
         <Card variant="outlined">{card3}</Card>
       </Grid>
     </Grid>
